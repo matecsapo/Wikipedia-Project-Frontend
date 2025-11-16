@@ -1,31 +1,91 @@
-.App {
-  text-align: center;
+.Wiki-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px;
+  min-height: 100vh;
+  background: #f1f2f4; /* light gray background */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Article {
+  position: relative;
+  width: 37vw;
+  height: 37vw;        /* equal width + height = circle */
+  padding: 40px;
+  border-radius: 50%;   /* makes it a perfect circle */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  /* Bubble shadow */
+  box-shadow:
+    0 15px 30px rgba(0,0,0,0.2),
+    inset 0 5px 15px rgba(255,255,255,0.6);
+}
+
+.Article h1 {
+  font-size: 2.5rem;
+}
+
+.Article p {
+  font-size: 1.25rem;
+}
+
+.Article h1,
+.Article p {
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,1); /* dark shadow for contrast */
+  color: white; /* keep text white for visibility */
+}
+
+.Jump-button {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;  /* perfect circle */
+  background: linear-gradient(145deg, #cce7ff, #99d4ff); /* lighter blue gradient */
+  color: black;
+  word-wrap: break-word;
+  border: none;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.6), 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Random-article-button {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;  /* perfect circle */
+  background: linear-gradient(145deg, #ffdddd, #ff9999); /* lighter red gradient */
+  color: black;
+  word-wrap: break-word;
+  border: none;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.6), 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
