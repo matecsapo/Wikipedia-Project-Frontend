@@ -41,6 +41,9 @@ function App() {
   // UI for display + interacting with current article + jump links
   return (
     <div className = "Wiki-app">
+      <header className = "App-title">
+        WikiTreedia
+      </header>
       {currentArticle ? (
         <>
           <div
@@ -75,7 +78,9 @@ function App() {
           </div>
         </>
       ) : (
-        <p> loading... </p>
+        <p style = {{color: "white", fontSize: "2rem"}}> 
+          loading... 
+        </p>
       )}
     </div>
   )
