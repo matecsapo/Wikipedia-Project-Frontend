@@ -6,13 +6,17 @@
   overflow: hidden;
   padding: 0px;
   min-height: 100vh;
-  background: #f1f2f4; /* light gray background */
+  /* Shiny dark background */
+  background: linear-gradient(145deg, #1a1a2e, #0d0d1a);
+  box-shadow: 
+    inset 0 10px 20px rgba(255,255,255,0.2),
+    0 15px 30px rgba(0,0,0,0.5);
 }
 
 .Article {
   position: relative;
-  width: 37vw;
-  height: 37vw;        /* equal width + height = circle */
+  width: 45vw;
+  height: 45vw;        /* equal width + height = circle */
   padding: 40px;
   border-radius: 50%;   /* makes it a perfect circle */
   display: flex;
@@ -49,8 +53,8 @@
   width: 8vw;
   height: 8vw;
   border-radius: 50%;  /* perfect circle */
-  background: linear-gradient(145deg, #cce7ff, #99d4ff); /* lighter blue gradient */
-  color: black;
+  background: linear-gradient(145deg, #3b5260, #2b3b48);
+  color: white;
   word-wrap: break-word;
   border: none;
   box-shadow: inset 0 2px 4px rgba(255,255,255,0.6), 0 4px 8px rgba(0,0,0,0.1);
@@ -59,7 +63,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -68,8 +73,8 @@
   width: 8vw;
   height: 8vw;
   border-radius: 50%;  /* perfect circle */
-  background: linear-gradient(145deg, #ffdddd, #ff9999); /* lighter red gradient */
-  color: black;
+  background: linear-gradient(145deg, #5eb8b1, #4aa39c);
+  color: white;
   word-wrap: break-word;
   border: none;
   box-shadow: inset 0 2px 4px rgba(255,255,255,0.6), 0 4px 8px rgba(0,0,0,0.1);
@@ -78,7 +83,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 

@@ -11,13 +11,13 @@ function App() {
 
   // Predefined positions for 6 jump link buttons
   const buttonPositions = [
-    { top: "50%", left: "20%", transform: "translate(-50%, -50%)"},   // Left
-    { top: "50%", left: "80%", transform: "translate(-50%, -50%)"},   // Right
-    { top: "20%", left: "25%", transform: "translate(-50%, -50%)"},   // Top-left
-    { top: "20%", left: "75%", transform: "translate(-50%, -50%)"},   // Top-right
-    { top: "80%", left: "25%", transform: "translate(-50%, -50%)"},   // Bottom-left
+    { top: "50%", left: "15%", transform: "translate(-50%, -50%)"},   // Left
+    { top: "50%", left: "85%", transform: "translate(-50%, -50%)"},   // Right
+    { top: "15%", left: "20%", transform: "translate(-50%, -50%)"},   // Top-left
+    { top: "15%", left: "80%", transform: "translate(-50%, -50%)"},   // Top-right
+    { top: "85%", left: "20%", transform: "translate(-50%, -50%)"},   // Bottom-left
   ];
-  const randomArticleButtonPosition = { top: "80%", left: "75%", transform: "translate(-50%, -50%)"}
+  const randomArticleButtonPosition = { top: "85%", left: "80%", transform: "translate(-50%, -50%)"}
 
   // For fetching a random starting article upon startup
   function Fetch_Random_Article() {
@@ -46,7 +46,7 @@ function App() {
           <div
             className="Article"
             style={{
-              backgroundImage: `url(${currentArticle.image})`,
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${currentArticle.image})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
