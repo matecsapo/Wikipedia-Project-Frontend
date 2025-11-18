@@ -58,6 +58,15 @@
   color: white; /* keep text white for visibility */
 }
 
+.Wiki-link {
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,1); /* dark shadow for contrast */
+  color: rgb(255, 235, 198);
+  font-size: 1.25rem
+}
+
 .Jump-button {
   position: absolute;
   width: 8vw;

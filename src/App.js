@@ -56,6 +56,14 @@ function App() {
           >
             <h1>{currentArticle.title_display}</h1>
             <p>{currentArticle.body}</p>
+            <a className="Wiki-link"
+              href={"https://en.wikipedia.org/wiki/" + currentArticle.title}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                Explore on Wikipedia
+            </a>
+            
           </div>
           <div className = "Jump_Links">
             {currentArticle.jump_links.slice(0, 5).map((link, idx) => (
